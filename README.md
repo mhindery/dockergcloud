@@ -6,7 +6,6 @@ The default docker image used in the Gitlab example has no Gcloud SDK installed.
 The official full-blown [Google cloud-sdk image](https://hub.docker.com/r/google/cloud-sdk/) doesn't work as base image for *dind* and has is a few hundred MB large.
 The image I based this on is [cwt114/alpine-gcloud](https://hub.docker.com/r/cwt114/alpine-gcloud/) which also doesn't start from a clean docker image. Hence this custom one.
 
-
 ## Gitlab CI example:
 
 The following is a basic example of a *.gitlab-ci.yml* file with 2 stages: push and deploy. It uses the docker-in-docker setup following the [Gitlab docs](https://docs.gitlab.com/ce/ci/docker/using_docker_build.html#use-docker-in-docker-executor).
